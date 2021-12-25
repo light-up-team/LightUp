@@ -30,12 +30,12 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity .3s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -159,7 +159,7 @@
 }
 
 .hero-header img {
-    animation: imgRotate 50s linear infinite;
+    animation: imgRotate 30s linear infinite;
 }
 
 @keyframes imgRotate { 
@@ -437,7 +437,7 @@
     padding: 0;
     text-align: left;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -452,7 +452,7 @@
 }
 
 .footer .btn.btn-link:hover {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     box-shadow: none;
 }
 
