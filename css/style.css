@@ -25,6 +25,16 @@
     z-index: 99;
 }
 
+/*** Progress條 ***/
+.progress{
+    position: relative;
+    outline: none;
+    transition: .5s;
+}
+/***
+.progress-bar {
+}
+***/
 
 /*** Spinner ***/
 #spinner {
@@ -86,7 +96,7 @@
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    font-size: 15px;
+    font-size: 18px;
     color: var(--light) !important;
     text-transform: uppercase;
     font-weight: 500;
@@ -159,13 +169,26 @@
 }
 
 .hero-header img {
+    animation: imgRotate 15s linear infinite;
+}
+
+/***Who Header***/
+.who-header {
+    /***background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);***/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-header img {
     animation: imgRotate 30s linear infinite;
 }
 
 @keyframes imgRotate { 
-    100% { 
-        transform: rotate(360deg); 
+    50% { 
+        transform: rotate(175deg);
     } 
+
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -233,16 +256,28 @@
 
 
 /*** Youtube Video ***/
+/***
 .video {
     position: relative;
-    height: 100%;
-    min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jpg);
+    height: 150%;
+    min-height: 1000px;
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/轉轉轉.gif);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: cover;
+}
+***/
+.video {
+    position: relative;
+    height: 150%;
+    min-height: 1000px;
+    background: linear-gradient(#FFFFFF), url(../img/轉轉轉_1_0.gif);
+    background-position: center center;
+    background-repeat: repeat;
     background-size: cover;
 }
 
+/***
 .video .btn-play {
     position: absolute;
     z-index: 3;
@@ -289,6 +324,7 @@
     transition: all 200ms;
 }
 
+
 .video .btn-play img {
     position: relative;
     z-index: 3;
@@ -326,7 +362,7 @@
 
 #videoModal .modal-dialog {
     position: relative;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 60px auto 0 auto;
 }
 
@@ -348,7 +384,7 @@
     background: #000000;
     opacity: 1;
 }
-
+***/
 
 /*** Team ***/
 .team-item {
